@@ -1,8 +1,6 @@
-numpy
-opencv-python
-torch
-torchvision
-pandas
-matplotlib
-scikit-image
-scipy
+numpy==2.5.3
+pandas==3.0.5
+opencv-python==5.0.0.93
+matplotlib==3.11.2
+torch==2.15.0
+scikit-image==0.26.0
