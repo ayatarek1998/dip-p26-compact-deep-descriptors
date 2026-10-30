@@ -1,0 +1,17 @@
+# data & large artifacts (HPatches, PhotoTour, COCO stay on Drive / Colab disk)
+data/
+*.tar.gz
+*.zip
+checkpoints/
+*.pt
+# smoke-test outputs are never committed
+SMOKE_*
+# python / jupyter / latex junk
+__pycache__/
+.ipynb_checkpoints/
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.synctex.gz
