@@ -1,0 +1,127 @@
+\documentclass[11pt]{article}
+
+% ============================================================
+% Milestone 1 -- Project Proposal & Literature Review Template
+% DIP Team Project
+% ============================================================
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage[round]{natbib}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=blue!50!black, citecolor=blue!50!black, urlcolor=blue!50!black}
+\usepackage{enumitem}
+\usepackage{xcolor}
+
+\newcommand{\todo}[1]{\textcolor{red}{\textbf{[TODO: #1]}}}
+
+\title{\LARGE Project Proposal \& Literature Review \\[4pt]
+\large \todo{Project Title}}
+\author{
+  \todo{Student A Full Name} \and
+  \todo{Student B Full Name} \and
+  \todo{Student C Full Name}
+}
+\date{Milestone 1 --- \todo{Date} \\{} [COURSE CODE] --- Digital Image Processing}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\todo{3--5 sentences: what problem are you tackling, why does it matter, what is your
+planned approach, and what public dataset/baseline will you use. Write this last.}
+\end{abstract}
+
+\section{Problem Statement \& Motivation}
+\label{sec:motivation}
+\todo{What image-processing problem are you solving? Why is it interesting or useful?
+How does it connect to material from the course (name the week/topic)? 1 paragraph.}
+
+\section{Related Work}
+\label{sec:related}
+\todo{Summarize at least 4 references, at least 2 of which should be from 2023--2026.
+Use the table below as a starting organizer, then write 1--2 paragraphs of prose
+connecting them to your plan.}
+
+\begin{table}[h]
+\centering
+\caption{Key references.}
+\label{tab:refs}
+\begin{tabular}{@{}p{0.30\linewidth}p{0.12\linewidth}p{0.45\linewidth}@{}}
+\toprule
+\textbf{Reference} & \textbf{Year} & \textbf{Relevance to this project} \\
+\midrule
+\citep{example2024} & 2024 & \todo{one sentence} \\
+\citep{example2018}  & 2018 & \todo{one sentence} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Dataset \& Baseline Plan}
+\label{sec:data}
+\todo{Name the public dataset(s), give exact size/subset you will use, and the license.
+State exactly which baseline (classical or prior learned method) you will reproduce
+and compare against.}
+
+\begin{table}[h]
+\centering
+\caption{Dataset summary.}
+\label{tab:data}
+\begin{tabular}{@{}lll@{}}
+\toprule
+\textbf{Dataset} & \textbf{Subset used} & \textbf{Link} \\
+\midrule
+\todo{name} & \todo{e.g., 800 train / 100 val crops} & \todo{URL} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Proposed Method}
+\label{sec:method}
+\todo{Sketch your planned approach: architecture diagram or pseudocode, what is novel
+or extended relative to the baseline, and why you expect it to work.}
+
+\section{Feasibility \& Compute Plan}
+\label{sec:feasibility}
+\todo{State your compute tier (CPU-OK / GPU-light), expected training time per
+experiment, and confirm this fits a laptop-class machine within the project window.}
+
+\subsection{Minimum Viable Deliverable (MVP)}
+\todo{The smallest version of this project that still produces a valid, reportable
+comparison against the baseline.}
+
+\subsection{Stretch Goal}
+\todo{What you will attempt if the MVP is on track by Week 5--6.}
+
+\section{Risk Assessment}
+\label{sec:risk}
+\begin{itemize}[leftmargin=*]
+  \item \todo{Risk 1 and its mitigation / fallback.}
+  \item \todo{Risk 2 and its mitigation / fallback.}
+\end{itemize}
+
+\section{Work Breakdown}
+\label{sec:workbreakdown}
+\begin{table}[h]
+\centering
+\caption{Milestone task allocation (see also the course project catalog entry for this
+project).}
+\label{tab:tasks}
+\begin{tabular}{@{}p{0.12\linewidth}p{0.26\linewidth}p{0.26\linewidth}p{0.26\linewidth}@{}}
+\toprule
+\textbf{Milestone} & \textbf{Student A} & \textbf{Student B} & \textbf{Student C} \\
+\midrule
+M1 (Wk 3) & \todo{task} & \todo{task} & \todo{task} \\
+M2 (Wk 6) & \todo{task} & \todo{task} & \todo{task} \\
+M3 (Wk 9) & \todo{task} & \todo{task} & \todo{task} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\bibliographystyle{unsrtnat}
+\bibliography{references}
+
+\end{document}
