@@ -1,4 +1,3 @@
-# Replaced with exact pinned versions by tools/sync_to_github.ipynb (run on Colab).
 numpy
 opencv-python
 torch
