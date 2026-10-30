@@ -1,0 +1,17 @@
+\begin{table}
+\caption{Candidate descriptor sizes (32x32 input patch).}
+\label{tab:sizes}
+\begin{tabular}{lrrrrr}
+\toprule
+model & params (K) & bytes float & bytes binary & cpu ms / 1000 patches & gpu ms / 1000 patches \\
+\midrule
+w=8, d=64 & 149.0 & 256.0 & 8.0 & 308.9 & 12.7 \\
+w=16, d=32 & 202.6 & 128.0 & 4.0 & 778.7 & 29.7 \\
+w=16, d=64 & 333.7 & 256.0 & 8.0 & 778.7 & 29.6 \\
+w=16, d=128 & 595.9 & 512.0 & 16.0 & 775.2 & 29.7 \\
+w=32, d=128 & 1334.6 & 512.0 & 16.0 & 1957.8 & 73.7 \\
+SIFT & 0.0 & 512.0 & -- & -- & -- \\
+ORB & 0.0 & -- & 32.0 & -- & -- \\
+\bottomrule
+\end{tabular}
+\end{table}
