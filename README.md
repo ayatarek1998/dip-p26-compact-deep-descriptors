@@ -17,7 +17,6 @@ p26lib.py               shared library: data loading, SIFT/ORB/Harris extractors
 notebooks/              one Colab notebook per student per milestone (M1_A, M1_B, M1_C, ...)
 report/m1/              M1 proposal (LaTeX template), references.bib, generated tables/ and figures/
 results/m1/             raw results (CSV / JSON) behind every number in the report
-tools/sync_to_github.ipynb   copies results from the shared Drive folder into this repo and pushes
 requirements.txt        pinned package versions (written from the Colab environment)
 ```
 
@@ -32,7 +31,6 @@ requirements.txt        pinned package versions (written from the Colab environm
 1. Put `p26lib.py` in a Google Drive folder `MyDrive/DIP_P26/`, and the HPatches **sequences** archive in `MyDrive/DIP_P26/data/`
    (any `.zip`/`.tar.gz` whose name contains "hpatches"; it is downloaded from the official server if missing).
 2. Open `notebooks/M1_A_…`, `M1_B_…`, `M1_C_…` in Colab and *Run all*. Outputs go to `DIP_P26/{results,tables,figures}`.
-3. Run `tools/sync_to_github.ipynb` to copy them into `results/m1/` and `report/m1/{tables,figures}/` and commit.
 
 **Protocol:** HPatches sequences, D2-Net subset (108 sequences = 52 illumination + 56 viewpoint, 540 image pairs), full resolution,
 up to 2000 keypoints per image, mutual-nearest-neighbour matching, MMA@1–10 px, homography accuracy @1/3/5 px (RANSAC 3 px),
