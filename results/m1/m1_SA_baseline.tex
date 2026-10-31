@@ -1,0 +1,18 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Student A baseline: 108 sequences, 540 pairs per method, native resolution, 2000 features requested and capped, mutual matching. Scores are fractions; extraction time is per image and total time is per pair.}
+\label{tab:m1_baseline}
+\begin{tabular}{@{}llllllllllllll@{}}
+\toprule
+method & kind & pairs & mma@1 & mma@3 & mma@5 & mma@10 & hacc@1 & hacc@3 & hacc@5 & n\_matches & extract\_ms & total\_ms & bytes\_per\_desc \\
+\midrule
+SIFT & overall & 540 & 0.353 & 0.507 & 0.539 & 0.554 & 0.459 & 0.713 & 0.811 & 690.026 & 332.698 & 920.902 & 512.000 \\
+SIFT & illumination & 260 & 0.369 & 0.487 & 0.519 & 0.533 & 0.619 & 0.831 & 0.885 & 619.969 & 248.709 & 637.894 & 512.000 \\
+SIFT & viewpoint & 280 & 0.337 & 0.526 & 0.558 & 0.574 & 0.311 & 0.604 & 0.743 & 755.079 & 410.688 & 1058.617 & 512.000 \\
+ORB & overall & 540 & 0.254 & 0.486 & 0.538 & 0.561 & 0.270 & 0.563 & 0.693 & 714.802 & 26.333 & 136.946 & 32.000 \\
+ORB & illumination & 260 & 0.307 & 0.475 & 0.526 & 0.551 & 0.423 & 0.723 & 0.808 & 709.904 & 20.246 & 121.811 & 32.000 \\
+ORB & viewpoint & 280 & 0.204 & 0.496 & 0.550 & 0.570 & 0.129 & 0.414 & 0.586 & 719.350 & 31.986 & 145.556 & 32.000 \\
+\bottomrule
+\end{tabular}
+\end{table}
