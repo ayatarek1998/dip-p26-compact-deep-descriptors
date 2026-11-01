@@ -1,0 +1,18 @@
+\begin{table}
+\caption{Evaluation protocol used for all methods.}
+\label{tab:protocol}
+\begin{tabular}{lp{11cm}}
+\toprule
+Item & Rule \\
+\midrule
+Data & HPatches, 108 sequences (52 illumination + 56 viewpoint), image 1 vs images 2-6 = 540 pairs, full resolution \\
+Keypoints & up to 2000 per image for every method \\
+Matching & mutual nearest neighbour; L2 for float descriptors, Hamming for binary \\
+MMA@t & fraction of matches with error <= t px under the true homography, t = 1..10 px, averaged over pairs \\
+H-acc@t & RANSAC homography (3 px); correct if mean corner error <= t px, t = 1, 3, 5 px \\
+Speed & time per image (detect + describe), 1 CPU thread, 2 warm-up runs, median of 10 runs, 10 fixed images \\
+Memory & bytes per descriptor \\
+Seed & 42 (image selection and RANSAC) \\
+\bottomrule
+\end{tabular}
+\end{table}
